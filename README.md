@@ -70,6 +70,8 @@ COPY --from=sleep-build-env /sleep/sleep /sleep
 
 ```
 ...
+        ports:
+        - containerPort: 8080
         lifecycle:
           preStop:
             exec:
